@@ -1,0 +1,197 @@
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background-color: aquamarine;
+    /* padding-top: 6rem; */
+    font-family: "Plus Jakarta Sans", serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+
+}
+.navbar {
+    
+    background-color: white !important;
+    position: sticky;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.fa-regular{
+    color: #ff385c;
+    font-size: 1.8rem;
+}
+
+.f-icons, .company-name, .policy{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-name p{
+    margin-bottom: 0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.f-icons a, .policy a{
+    text-decoration: none;
+    text-align: center;
+    color: black
+    
+
+}
+
+
+.policy a:hover{
+    text-decoration: underline;
+
+}
+
+.f-container{
+    display: grid;
+    place-items: center;
+    height: 100px;
+    background-color: lightgrey;
+    
+}
+
+.fi-icon a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.privacy{
+    margin-right: 0.5rem;
+
+}
+
+.fa-facebook, .fa-instagram{
+    margin-right: 0.5rem;
+}
+
+/* Card */
+.listing-card{
+    border: none!important; 
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 12000px) {
+    .listing-card {
+        padding-right: 1.5rem !important;
+    margin-left: 0.5rem; /* Adjust the margin as needed */
+    }
+}
+
+/* @media (max-width: 767px){
+    .listing-card {
+
+    }
+} */
+
+/* @media (max-width: 768px){
+    .res-card ,.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+} */
+
+/* listing redirect */
+
+.link{
+    text-decoration: none !important;
+}
+
+.card-body{
+    padding: 0px !important;
+}
+ 
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 20rem;
+}
+
+.card-text p {
+    font-weight: 400!important;
+}
+
+/* /* /* New Page linsting  */
+
+.eidted-btn {
+    background-color: #ff385c !important;
+    border: none !important;
+
+}
+
+.form-control{
+    border: 1px solid grey!important;
+}
+
+.container{
+    flex: 1;
+    padding-top: 4rem;
+    /* margin-top: 4rem; */
+}
+
+/* body{
+    display: grid!important;
+    gap: 20px !important;
+} */
+
+/* Show Page */
+
+.show-image{
+    height: 50vh;
+}
+
+.btn-container{
+    display: flex;
+
+}
+
+
+/* review Star edit */
+
+.fa-star{
+    font-size: 0.8rem;
+    text-align: center;
+    
+}
+
+/* Login page signup btn style */
+
+#signup-link{
+    text-decoration: none !important;
+    color: white;
+}
+
+/*  *//* #flash-msg{
+    .flash-message {
+        position: absolute !important;
+        top: 60px!important; /* Adjust based on navbar height */
+        /* left: 50%!important; */
+        /* transform: translateX(-50%)!important; */
+        /* width: 90%!important; Adjust width */
+        /* z-index: 1050!important; Ensure it's above other elements */
+    /* } */
+    
+/* } */
+

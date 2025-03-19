@@ -1,0 +1,121 @@
+<% layout('/layouts/boilerplate') -%> 
+<body>
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h2 class="mb-2">Create Your Listing</h2>
+      <form
+        method="POST"
+        action="/listings"
+        novalidate
+        class="needs-validation"
+      >
+        <div class="med-3">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            name="listing[title]"
+            placeholder="Add a catchy title"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">
+            Please Enter Valid title
+          </div>
+
+          <div class="valid-feedback">
+            Title Looks Great
+          </div>
+        </div>
+        <div class="med-3">
+          <label for="listing-description" class="mt-2">Description</label>
+          <textarea
+            rows="5"
+            type="text"
+            name="listing[description]"
+            placeholder="Enter description"
+            class="form-control"
+            id="listing-description"
+            required
+          >
+          </textarea>
+          <div class="invalid-feedback">
+            Please Enter a Small Description
+          </div>
+          <br />
+        </div>
+
+        <div class="med-3">
+          <label for="imageFilename">Image Filename</label>
+          <input
+            type="text"
+            id="imageFilename"
+            name="listing[image][filename]"
+            class="form-control"
+            required
+          /><br />
+        </div>
+
+        <div class="med-3">
+          <label for="listing-image-url">Image URL</label>
+          <input
+          id="listing-image-url"
+            type="text"
+            id="imageUrl"
+            name="listing[image][url]"
+            class="form-control"
+          />
+          <br />
+        </div>
+        <div class="med-3">
+          <label for="listing-location">Location</label>
+          <input
+          id="listing-location"
+            type="text"
+            name="listing[location]"
+            placeholder="Enter Location"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Please Enter Valid Location</div>
+          <br />
+        </div>
+        <div class="row">
+          <div class="med-3 col-md-4">
+            <label for="listing-price">Price</label>
+            <input
+            id="listing-price"
+              type="text"
+              name="listing[price]"
+              placeholder="Enter price in INR"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">
+              Please Enter Valid Price
+            </div>
+            <br />
+          </div>
+
+          <div class="med-3 col-md-8">
+            <label for="listing-country">Country</label>
+            <input
+            id="listing-country"
+              type="text"
+              name="listing[country]"
+              placeholder="Enter country Name"
+              class="form-control"
+              required
+            />
+            <br />
+          </div>
+        </div>
+
+        <button type="submit" class="btn eidted-btn btn-primary">
+          Add Now
+        </button>
+      </form>
+      <br />
+      <br />
+    </div>
+  </div>
+</body>
